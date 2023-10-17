@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardNomorPerkara"
+        style="@style/Widget.Material3.CardView.Elevated"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:clickable="true"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="2dp"
+        app:contentPaddingTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <TextView
+            android:id="@+id/tvIdNomorPerkara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:text="100"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tvNamaNp"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="84dp"
+            android:text="Nomor Perkara"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tvNamaPegawaiNp"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_marginTop="26dp"
+            android:layout_marginStart="84dp"
+            android:text="Nomor Perkara"
+            android:textColor="@color/white" />
+
+        <View
+            android:id="@+id/NpStatus"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginEnd="12dp"
+            android:background="#36FF20"/>
+
+<!--        <androidx.appcompat.widget.AppCompatImageButton-->
+<!--            android:id="@+id/btnHapusNomorPerkara"-->
+<!--            android:layout_width="56dp"-->
+<!--            android:layout_height="48dp"-->
+<!--            android:layout_gravity="end"-->
+<!--            android:clickable="true"-->
+<!--            android:src="@android:drawable/ic_menu_delete"-->
+<!--            android:backgroundTint="#00FFFFFF" />-->
+    </androidx.cardview.widget.CardView>
+
+    <Space
+        app:layout_constraintTop_toBottomOf="@+id/cardNomorPerkara"
+        android:layout_width="match_parent"
+        android:layout_height="12dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

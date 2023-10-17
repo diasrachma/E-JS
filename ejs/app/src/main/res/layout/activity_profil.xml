@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                app:cardBackgroundColor="#00FFFFFF"
+                app:cardElevation="0dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profilImage"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#00FFFFFF"
+                    android:backgroundTint="#00FFFFFF"
+                    android:src="@drawable/ic_account"
+                    app:civ_border_color="#000000"
+                    app:civ_border_width="1dp"
+                    app:civ_circle_background_color="#00FFFFFF"
+                    tools:ignore="SpeakableTextPresentCheck"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                app:boxStrokeColor="#2196F3">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/profilNama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nama Pegawai"
+                    android:textColor="@color/black"
+                    android:enabled="false"
+                    android:inputType="textShortMessage" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                app:boxStrokeColor="#2196F3">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/profilNip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:textColor="@color/black"
+                    android:hint="NIP Pegawai"
+                    android:inputType="textShortMessage" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                app:boxStrokeColor="#2196F3">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/profilJabatan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Jabatan Pegawai"
+                    android:textColor="@color/black"
+                    android:enabled="false"
+                    android:inputType="textShortMessage" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                app:boxStrokeColor="#2196F3">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/profilUnitKerja"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Unit Kerja"
+                    android:textColor="@color/black"
+                    android:enabled="false"
+                    android:inputType="textShortMessage" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                app:cardBackgroundColor="#00FFFFFF"
+                app:cardElevation="0dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_gravity="start"
+                    android:layout_width="160dp"
+                    android:layout_height="58dp"
+                    app:boxStrokeColor="#2196F3">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/profilGolongan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Golongan"
+                        android:textColor="@color/black"
+                        android:enabled="false"
+                        android:inputType="textShortMessage" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_gravity="end"
+                    android:layout_width="160dp"
+                    android:layout_height="58dp"
+                    app:boxStrokeColor="#2196F3">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/profilNoHp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Telepon"
+                        android:textColor="@color/black"
+                        android:enabled="false"
+                        android:inputType="textShortMessage" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                app:cardBackgroundColor="#00FFFFFF"
+                app:cardElevation="0dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_gravity="start"
+                    android:layout_width="160dp"
+                    android:layout_height="58dp"
+                    app:boxStrokeColor="#2196F3">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/profilMasaKerja"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Masa Kerja"
+                        android:textColor="@color/black"
+                        android:enabled="false"
+                        android:inputType="textShortMessage" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_gravity="end"
+                    android:layout_width="160dp"
+                    android:layout_height="58dp"
+                    app:boxStrokeColor="#2196F3">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/profilLevel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:textColor="@color/black"
+                        android:hint="User"
+                        android:inputType="textShortMessage" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/tvPerforma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Performa Jurusita"
+                android:layout_marginTop="12dp"
+                android:textSize="18sp"
+                style="@style/TextAppearance.AppCompat.Title"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#00FFFFFF"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                        android:id="@+id/ratingBarProfil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="8dp"
+                        android:progressTint="#FFEB3B"
+                        android:numStars="5"
+                        android:stepSize="0.5"
+                        android:isIndicator="true" />
+
+                    <TextView
+                        android:id="@+id/tvRatingProfil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="rating"
+                        android:maxLength="3"
+                        android:textSize="18sp"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="16dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

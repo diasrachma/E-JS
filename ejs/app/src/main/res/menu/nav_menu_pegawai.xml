@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/nav_homePegawai"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/nav_profilPegawai"
+        android:icon="@drawable/akun"
+        android:title="Profil" />
+
+    <item
+        android:title="Evidence"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/nav_formPegawai"
+                android:icon="@drawable/form"
+                android:title="Form" />
+
+            <item
+                android:id="@+id/nav_riwayatPegawai"
+                android:icon="@drawable/archive"
+                android:title="Riwayat" />
+        </menu>
+    </item>
+
+    <item
+        android:title="Pengaturan">
+        <menu>
+            <item
+                android:id="@+id/nav_chatPegawai"
+                android:icon="@drawable/message"
+                android:title="Chat Admin"/>
+
+            <item
+                android:id="@+id/nav_logoutPegawai"
+                android:icon="@drawable/logoutnih"
+                android:title="Logout"/>
+        </menu>
+    </item>
+
+</menu>

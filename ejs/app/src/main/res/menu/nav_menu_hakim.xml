@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/nav_homeHakim"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/nav_profilHakim"
+        android:icon="@drawable/akun"
+        android:title="Profil" />
+
+    <item
+        android:id="@+id/nav_npHakim"
+        android:icon="@drawable/nomor_perkara"
+        android:title="Nomor Perkara" />
+
+    <item
+        android:title="Pengguna"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/nav_userHakim"
+                android:icon="@drawable/users"
+                android:title="Master User" />
+        </menu>
+    </item>
+
+    <item
+        android:title="Evidence"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/nav_riwayatHakim"
+                android:icon="@drawable/archive"
+                android:title="Arsip" />
+
+            <item
+                android:id="@+id/nav_riwayatHapusHakim"
+                android:icon="@drawable/history"
+                android:title="Riwayat Hapus" />
+        </menu>
+    </item>
+
+    <item
+        android:title="Monitoring"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/nav_monitoring"
+                android:icon="@drawable/ic_monitor"
+                android:title="Laporan Monitoring" />
+        </menu>
+    </item>
+
+    <item
+        android:title="Pengaturan">
+        <menu>
+            <item
+                android:id="@+id/nav_chatHakim"
+                android:icon="@drawable/message"
+                android:title="Chat Admin"/>
+
+            <item
+                android:id="@+id/nav_logoutHakim"
+                android:icon="@drawable/logoutnih"
+                android:title="Logout"/>
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/nav_homeAdmin"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/nav_npAdmin"
+        android:icon="@drawable/nomor_perkara"
+        android:title="Nomor Perkara" />
+
+    <item
+        android:title="Pengguna"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/nav_registrasiAdmin"
+                android:icon="@drawable/key"
+                android:title="Registrasi Akun" />
+
+            <item
+                android:id="@+id/nav_userAdmin"
+                android:icon="@drawable/akun"
+                android:title="Master User" />
+        </menu>
+    </item>
+
+    <item
+        android:title="Evidence"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/nav_riwayatAdmin"
+                android:icon="@drawable/archive"
+                android:title="Arsip" />
+
+            <item
+                android:id="@+id/nav_riwayatHapusAdmin"
+                android:icon="@drawable/history"
+                android:title="Riwayat Hapus" />
+
+            <item
+                android:id="@+id/nav_kendalaAdmin"
+                android:icon="@drawable/task"
+                android:title="Kendala" />
+        </menu>
+    </item>
+
+    <item
+        android:title="Pengaturan">
+        <menu>
+            <item
+                android:id="@+id/nav_resetAdmin"
+                android:icon="@drawable/privacy"
+                android:title="Privasi Akun"/>
+
+            <item
+                android:id="@+id/nav_logoutAdmin"
+                android:icon="@drawable/logoutnih"
+                android:title="Logout"/>
+        </menu>
+    </item>
+
+</menu>

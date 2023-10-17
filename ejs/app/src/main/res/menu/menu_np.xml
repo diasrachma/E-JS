@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/np_aktif"
+        android:icon="@drawable/perkara"
+        android:title="Aktif"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/np_non"
+        android:icon="@drawable/perkara_non"
+        android:title="Tidak Aktif"
+        app:showAsAction="always" />
+</menu>

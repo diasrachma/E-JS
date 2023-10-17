@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <HorizontalScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardPegawai"
+                style="@style/Widget.Material3.CardView.Elevated"
+                android:layout_width="match_parent"
+                android:layout_height="84dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
+                app:cardBackgroundColor="#00FFFFFF"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="0dp"
+                app:contentPaddingTop="4dp"
+                app:strokeColor="@color/purple_200"
+                app:strokeWidth="2dp"
+                tools:ignore="SpeakableTextPresentCheck">
+
+                <View
+                    android:id="@+id/stsAkunUsers"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginStart="8dp"
+                    android:background="#46ED49"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgPegawa"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/ic_account"
+                    app:civ_border_color="#000000"
+                    app:civ_border_width="1dp" />
+
+                <TextView
+                    android:id="@+id/namaPegawai"
+                    style="@style/TextAppearance.AppCompat"
+                    android:layout_width="250dp"
+                    android:maxLines="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Nama Lengkap Pegawai beserta Gelar" />
+
+                <TextView
+                    android:id="@+id/jabatanPegawai"
+                    style="@style/TextAppearance.AppCompat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginTop="28dp"
+                    android:text="Jabatan Pegawai" />
+
+                <TextView
+                    android:id="@+id/nipPegawai"
+                    style="@style/TextAppearance.AppCompat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="330dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="NIP Pegawai" />
+
+                <TextView
+                    android:id="@+id/TVgolonganPegawai"
+                    style="@style/TextAppearance.AppCompat"
+                    android:layout_width="36dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="330dp"
+                    android:layout_marginTop="28dp"
+                    android:text="GOL-" />
+
+                <TextView
+                    android:id="@+id/golonganPegawai"
+                    style="@style/TextAppearance.AppCompat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="366dp"
+                    android:layout_marginTop="28dp"
+                    android:text="XXX/AA" />
+
+                <TextView
+                    android:id="@+id/unitkerjaPegawai"
+                    style="@style/TextAppearance.AppCompat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginTop="48dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="Pengadilan Negeri Kabupaten Kediri" />
+
+                <TextView
+                    android:id="@+id/masakerjaPegawai"
+                    style="@style/TextAppearance.AppCompat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="330dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="48dp"
+                    android:text="Masa Kerja Pegawai" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:boxCornerRadiusBottomEnd="15dp"
+                app:boxCornerRadiusBottomStart="15dp"
+                app:boxCornerRadiusTopEnd="15dp"
+                app:boxCornerRadiusTopStart="15dp"
+                app:cardBackgroundColor="#00FFFFFF"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="0dp"
+                app:strokeWidth="2dp"
+                app:strokeColor="#3C95DE">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnEditPegawai"
+                    android:layout_width="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_height="52dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/edit"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:boxCornerRadiusBottomEnd="15dp"
+                app:boxCornerRadiusBottomStart="15dp"
+                app:boxCornerRadiusTopEnd="15dp"
+                app:boxCornerRadiusTopStart="15dp"
+                app:cardBackgroundColor="#00FFFFFF"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="0dp"
+                app:strokeWidth="2dp"
+                app:strokeColor="#93910C">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnHapusPegawai"
+                    android:layout_width="58dp"
+                    android:layout_height="64dp"
+                    android:layout_gravity="center"
+                    android:background="@android:drawable/ic_menu_delete"
+                    android:backgroundTint="#FF0000"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnAktifkanPegawai"
+                    android:layout_width="40dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="9dp"
+                    android:layout_marginStart="9dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/done"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btnLihatArsip"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:boxCornerRadiusBottomEnd="15dp"
+                app:boxCornerRadiusBottomStart="15dp"
+                app:boxCornerRadiusTopEnd="15dp"
+                app:boxCornerRadiusTopStart="15dp"
+                app:cardBackgroundColor="#00FFFFFF"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="0dp"
+                app:strokeWidth="2dp"
+                app:strokeColor="@color/purple_500">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="12dp"
+                    android:src="@drawable/archive"
+                    app:tint="#2196F3"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView"
+        tools:layout_editor_absoluteX="-33dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

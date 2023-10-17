@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardKendala"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="8dp"
+        android:longClickable="true"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="2dp"
+        app:layout_constraintEnd_toStartOf="@+id/lingkaranAdmin"
+        app:layout_constraintStart_toEndOf="@+id/lingkaranPegawai"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <TextView
+            android:id="@+id/pengirimKendala"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:lines="1"
+            android:layout_marginBottom="24dp"
+            android:layout_marginHorizontal="8dp" />
+
+        <TextView
+            android:id="@+id/pesanKendala"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="24dp"
+            android:layout_marginHorizontal="8dp" />
+
+        <TextView
+            android:id="@+id/jamKendala"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="4dp"
+            android:text="11:52" />
+    </androidx.cardview.widget.CardView>
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/cardKendala" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/lingkaranPegawai"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:src="#FDEEBF"
+        app:layout_constraintBottom_toBottomOf="@+id/cardKendala"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardKendala" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/lingkaranAdmin"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="8dp"
+        android:src="#AAFFFE"
+        app:layout_constraintBottom_toBottomOf="@+id/cardKendala"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardKendala" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
